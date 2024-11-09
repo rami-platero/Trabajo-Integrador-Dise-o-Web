@@ -1307,6 +1307,23 @@ video {
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
+.text-black\/50{
+  color: rgb(0 0 0 / 0.5);
+}
+
+.text-white\/50{
+  color: rgb(255 255 255 / 0.5);
+}
+
+.text-white\/70{
+  color: rgb(255 255 255 / 0.7);
+}
+
+.text-amber-400{
+  --tw-text-opacity: 1;
+  color: rgb(251 191 36 / var(--tw-text-opacity));
+}
+
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1354,6 +1371,16 @@ video {
 .hover\:text-slate-700:hover{
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.hover\:text-amber-100:hover{
+  --tw-text-opacity: 1;
+  color: rgb(254 243 199 / var(--tw-text-opacity));
+}
+
+.hover\:text-amber-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(253 230 138 / var(--tw-text-opacity));
 }
 
 .focus-visible\:ring-2:focus-visible{
