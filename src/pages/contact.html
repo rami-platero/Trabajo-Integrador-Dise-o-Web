@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
     <link href="../output.css" rel="stylesheet">
 </head>
+
 <body class="bg-[#0f0e12] text-white mx-4 font-poppins">
     <header>
         <nav class="max-w-[1400px] w-full mx-auto min-h-[80px] flex justify-between items-center">
-            <a href="../index.html"><img class="max-w-[64px]" src="../../assets/img/logo.png" alt="logo"></a>
+            <a href="../index.html"><img class="max-w-[64px]" src="../assets/images/logo.png" alt="logo"></a>
             <div>
                 <ul class="list-none flex gap-8 font-normal text-white/80">
                     <li><a href="">Services</a></li>
@@ -21,7 +23,99 @@
             </div>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="max-w-[1400px] mx-auto mt-8 flex flex-col gap-2 items-center h-dvh">
+        <h1 class="font-normal text-5xl text-amber-200 font-poppins text-center">Contact us
+        </h1>
+        <p class="text-amber-50 max-w-[700px] text-center mx-auto text-sm leading-6">Have questions or ready to start your journey?
+            Reach out below, and we’ll be happy to help make your next adventure unforgettable!</p>
+        <form class="mt-8 max-w-[700px] w-full flex flex-col gap-4">
+            <div class="flex gap-4 w-full">
+                <div class="flex flex-col gap-2 flex-1">
+                    <label for="firstName" class="text-sm">First name</label>
+                    <input required spellcheck="false" type="text" placeholder="First Name" name="firstName"
+                        class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full">
+                </div>
+                <div class="flex flex-col gap-2 flex-1">
+                    <label required spellcheck="false" for="lastName" class="text-sm">Last name</label>
+                    <input type="text" placeholder="Last Name" name="lastName"
+                        class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full">
+                </div>
+            </div>
+            <div>
+                <label for="email" class="text-sm">Email</label>
+                <input required spellcheck="false" type="text" name="email" placeholder="youremail@gmail.com"
+                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full mt-2">
+            </div>
+            <div><label for="email" class="text-sm">Phone Number</label>
+                <input required spellcheck="false" type="tel" name="number" placeholder="+54 264 000 0000"
+                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full mt-2">
+            </div>
+            <div>
+                <label for="message" class="text-sm">Message</label>
+                <textarea required spellcheck="false" name="message" placeholder="Leave us a message"
+                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full min-h-[200px] resize-none mt-2"></textarea>
+            </div>
+            <button type="submit"
+                class="text-amber-200 text-sm border-amber-200 border-[1px] rounded-3xl px-6 py-2 hover:bg-amber-200 hover:text-black duration-300 ease-in-out flex justify-center items-center gap-2">Send
+                message</button>
+        </form>
+    </main>
+    <footer class="max-w-[1400px] mx-auto flex flex-col gap-8">
+        <img src="../assets/images/logo.png" alt="" class="w-12">
+        <div class="grid w-full grid-cols-2 gap-4 lg:grid-cols-6">
+            <!-- Sitemap -->
+            <div class="flex flex-col gap-2">
+                <p class="mb-2 text-sm text-amber-300 font-normal">Sitemap</p>
+                <ul class="flex flex-col gap-2 text-sm font-light">
+                    <li><a href="" class="hover:text-amber-200">Home</a></li>
+                    <li><a href="" class="hover:text-amber-200">Destinations</a></li>
+                    <li><a href="" class="hover:text-amber-200">Blog</a></li>
+                    <li><a href="" class="hover:text-amber-200">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- About Us -->
+            <div class="flex flex-col gap-2">
+                <p class="mb-2 text-sm text-amber-300 font-normal">About Us</p>
+                <ul class="flex flex-col gap-2 text-sm font-light">
+                    <li><a href="" class="hover:text-amber-200">Our Story</a></li>
+                    <li><a href="" class="hover:text-amber-200">Careers</a></li>
+                    <li><a href="" class="hover:text-amber-200">Privacy Policy</a></li>
+                    <li><a href="" class="hover:text-amber-200">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="flex flex-col gap-2">
+                <p class="mb-2 text-sm text-amber-300 font-normal">Customer Support</p>
+                <ul class="flex flex-col gap-2 text-sm font-light">
+                    <li><a href="" class="hover:text-amber-200">FAQ</a></li>
+                    <li><a href="" class="hover:text-amber-200">Help Center</a></li>
+                    <li><a href="" class="hover:text-amber-200">Live Chat</a></li>
+                    <li><a href="" class="hover:text-amber-200">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Explore More -->
+            <div class="flex flex-col gap-2">
+                <p class="mb-2 text-sm text-amber-300 font-normal">Explore More</p>
+                <ul class="flex flex-col gap-2 text-sm font-light">
+                    <li><a href="" class="hover:text-amber-200">Top Destinations</a></li>
+                    <li><a href="" class="hover:text-amber-200">Travel Guides</a></li>
+                    <li><a href="" class="hover:text-amber-200">Reviews & Testimonials</a></li>
+                    <li><a href="" class="hover:text-amber-200">Special Offers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <hr>
+            <div class="flex justify-between text-xs my-4 text-white/70 font-normal flex-wrap gap-4">
+                <p>Curated travel experiences, seamless bookings, and all the services you need for your perfect
+                    getaway.</p>
+                <a href="">Terms & Conditions</a>
+            </div>
+    </footer>
 </body>
+
 </html>
