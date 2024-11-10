@@ -104,4 +104,11 @@
     outline: none;
     outline-offset: 0.125rem;
   }
+
+  .collapse-navbar {
+    @media screen and (min-width: 768px) {
+        display: flex !important;
+        visibility: visible !important;
+    }
+  }
 }

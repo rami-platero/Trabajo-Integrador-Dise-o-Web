@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../output.css">
@@ -12,15 +13,28 @@
 
 <body class="bg-[#0f0e12] text-white mx-4 font-poppins">
     <header>
-        <nav class="max-w-[1400px] w-full mx-auto min-h-[80px] flex justify-between items-center">
-            <a href="../index.html"><img class="max-w-[64px]" src="../assets/images/logo.png" alt="logo"></a>
-            <div>
-                <ul class="list-none flex gap-8 font-normal text-white/80">
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About</a></li>
-                    <li>Contact</li>
-                    <li><a href="">Test2</a></li>
-                </ul>
+        <nav class="max-w-[1400px] w-full mx-auto min-h-[80px]">
+            <div class="flex justify-between items-center flex-col md:flex-row gap-4">
+                <div class="flex justify-between w-full md:w-fit mt-4">
+                    <a href="../../index.html"><img class="max-w-[64px]" src="../assets/images/logo.png" alt="logo"></a>
+                    <!-- Hamburger Button -->
+                    <button class="md:hidden" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="w-8 h-8" data-lucide="menu"></i>
+                    </button>
+                </div>
+                <div class="collapse collapse-navbar md:w-auto w-full navbar-content" id="collapseExample">
+                    <ul class="list-none flex gap-4 md:gap-8 font-normal text-white/80 md:flex-row flex-col">
+                        <li class="select-none"><a class="text-amber-200">Destinations</a></li>
+
+                        <li><a href="./activities.html"
+                                class="hover:text-amber-200 duration-300 ease-in-out">Activities</a></li>
+                        <li><a href="./contact.html" class="hover:text-amber-200 duration-300 ease-in-out">Contact</a>
+                        </li>
+                        <li><a href="./about.html" class="hover:text-amber-200 duration-300 ease-in-out">About us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -107,7 +121,7 @@
                 <div class="md:flex-[0.75] flex flex-col gap-4 justify-center items-center">
                     <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 mx-auto content-center">
                         <div class="max-w-[310px] rounded-xl bg-black/30">
-                            <img src="../assets/images/kyoto.jpg" alt=""
+                            <img src="../assets/images/kyoto.jpg" alt="New Zealand, Queenstown"
                                 class="aspect-[5/3] object-cover w-full rounded-t-xl">
                             <div class="flex flex-col p-4">
                                 <h5 class="text-xs">6 days</h5>
@@ -121,7 +135,7 @@
                             </div>
                         </div>
                         <div class="max-w-[310px] rounded-xl bg-black/30">
-                            <img src="../assets/images/iceland.webp" alt=""
+                            <img src="../assets/images/iceland.webp" alt="Iceland, Reykjavik"
                                 class="aspect-[5/3] object-cover w-full rounded-t-xl">
                             <div class="flex flex-col p-4">
                                 <h5 class="text-xs">6 days</h5>
@@ -135,7 +149,7 @@
                             </div>
                         </div>
                         <div class="max-w-[310px] rounded-xl bg-black/30">
-                            <img src="../assets/images/dubai-uae-city-lights-dcwdgu9l2fz3829v.jpg" alt=""
+                            <img src="../assets/images/dubai-uae-city-lights-dcwdgu9l2fz3829v.jpg" alt="Dubai, UAE"
                                 class="aspect-[5/3] object-cover w-full rounded-t-xl">
                             <div class="flex flex-col p-4">
                                 <h5 class="text-xs">5 days</h5>
@@ -150,7 +164,7 @@
                         </div>
                         <div class="max-w-[310px] rounded-xl bg-black/30">
                             <img src="../assets/images/best-time-to-visit-AMALFI0622-e442428423b94e41a3817f3192ba0c2b.jpg"
-                                alt="" class="aspect-[5/3] object-cover w-full rounded-t-xl">
+                                alt="Amalfi Coast, Italy" class="aspect-[5/3] object-cover w-full rounded-t-xl">
                             <div class="flex flex-col p-4">
                                 <h5 class="text-xs">5 days</h5>
                                 <h3 class="text-lg font-semibold">Italy</h3>
@@ -163,7 +177,7 @@
                             </div>
                         </div>
                         <div class="max-w-[310px] rounded-xl bg-black/30">
-                            <img src="../assets/images/3001688.jpg" alt=""
+                            <img src="../assets/images/3001688.jpg" alt="Banff National Park"
                                 class="aspect-[5/3] object-cover w-full rounded-t-xl">
                             <div class="flex flex-col p-4">
                                 <h5 class="text-xs">5 days</h5>
@@ -177,7 +191,7 @@
                             </div>
                         </div>
                         <div class="max-w-[310px] rounded-xl bg-black/30">
-                            <img src="../assets/images/3001688.jpg" alt=""
+                            <img src="../assets/images/image.adapt.800.HIGH.webp" alt="Syndey, Australia Landscape"
                                 class="aspect-[5/3] object-cover w-full rounded-t-xl">
                             <div class="flex flex-col p-4">
                                 <h5 class="text-xs">7 days</h5>

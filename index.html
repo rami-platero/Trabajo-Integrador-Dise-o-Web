@@ -13,15 +13,28 @@
 
 <body class="bg-[#0f0e12] text-white mx-4 font-poppins">
     <header>
-        <nav class="max-w-[1400px] w-full mx-auto min-h-[80px] flex justify-between items-center">
-            <img class="max-w-[64px]" src="./src/assets/images/logo.png" alt="logo">
-            <div>
-                <ul class="list-none flex gap-8 font-medium text-white/80">
-                    <li><a href="./src/pages/destinations.html">Destinations</a></li>
-                    <li><a href="./src/pages/activities.html">Activities</a></li>
-                    <li><a href="./src/pages/contact.html">Contact</a></li>
-                    <li><a href="./src/pages/about.html">About us</a></li>
-                </ul>
+        <nav class="max-w-[1400px] w-full mx-auto min-h-[80px]">
+            <div class="flex justify-between items-center flex-col md:flex-row gap-4">
+                <div class="flex justify-between w-full md:w-fit mt-4">
+                    <a href=""><img class="max-w-[64px]" src="./src/assets/images/logo.png" alt="logo"></a>
+                    <!-- Hamburger Button -->
+                    <button class="md:hidden" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="w-8 h-8" data-lucide="menu"></i>
+                    </button>
+                </div>
+                <div class="collapse collapse-navbar md:w-auto w-full navbar-content" id="collapseExample">
+                    <ul class="list-none flex gap-4 md:gap-8 font-normal text-white/80 md:flex-row flex-col">
+                        <li><a href="./src/pages/destinations.html"
+                                class="hover:text-amber-200 duration-300 ease-in-out">Destinations</a></li>
+                        <li><a href="./src/pages/activities.html"
+                                class="hover:text-amber-200 duration-300 ease-in-out">Activities</a></li>
+                        <li><a href="./src/pages/contact.html"
+                                class="hover:text-amber-200 duration-300 ease-in-out">Contact</a></li>
+                        <li><a href="./src/pages/about.html" class="hover:text-amber-200 duration-300 ease-in-out">About
+                                us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -100,7 +113,7 @@
                         <h4 class="text-xs">Relaxation & Wellness</h4>
                         <h3 class="text-lg">Maui, Hawaii, USA</h3>
                         <p class="text-sm font-light">Escape to the lush landscapes of Maui, a tropical paradise known
-                            for its stunning beaches and scenic drives. Whether you’re snorkeling in crystal-clear
+                            for its stunning beaches and scenic drives. Whether you're snorkeling in crystal-clear
                             waters, exploring the famed Road to Hana, or relaxing by the shore, Maui promises adventure
                             and tranquility at every turn.</p>
                         <a href=""
@@ -130,7 +143,7 @@
         <section>
             <h2 class="font-semibold text-3xl text-amber-200 font-lora text-center">Experience the Difference</h2>
             <p class="text-sm text-amber-50 max-w-[800px] mx-auto text-center mt-2">From the moment you start planning
-                to the last day of your adventure, we’re here to ensure every detail is seamless. With premium travel
+                to the last day of your adventure, we're here to ensure every detail is seamless. With premium travel
                 insurance, stress-free booking, and curated tour packages, our commitment to excellence means you can
                 focus on making memories.</p>
             <div class="flex gap-12 mt-12 justify-center flex-wrap">
@@ -172,7 +185,7 @@
                             <p class="text-sm leading-6 text-amber-50">Our expert team crafts personalized itineraries
                                 that match your
                                 interests, from cultural
-                                tours to adventurous excursions. With curated packages, you’ll experience destinations
+                                tours to adventurous excursions. With curated packages, you'll experience destinations
                                 like never before.</p>
                         </div>
                     </div>
@@ -185,7 +198,7 @@
 
     <footer class="mt-12 max-w-[1400px] mx-auto flex flex-col gap-8">
         <img src="./src/assets/images/logo.png" alt="" class="w-12">
-        <div class="grid w-full grid-cols-2 gap-4 lg:grid-cols-6">
+        <div class="grid w-full grid-cols-2 sm:grid-cols-2 gap-4 lg:grid-cols-6">
             <!-- Sitemap -->
             <div class="flex flex-col gap-2">
                 <p class="mb-2 text-sm text-amber-300 font-normal">Sitemap</p>
@@ -212,7 +225,7 @@
             <div class="flex flex-col gap-2">
                 <p class="mb-2 text-sm text-amber-300 font-normal">Customer Support</p>
                 <ul class="flex flex-col gap-2 text-sm font-light">
-                    <li><a href="" class="hover:text-amber-200">FAQ</a></li>
+                    <li><a href="./src/pages/about.html#FAQ" class="hover:text-amber-200">FAQ</a></li>
                     <li><a href="" class="hover:text-amber-200">Help Center</a></li>
                     <li><a href="" class="hover:text-amber-200">Live Chat</a></li>
                     <li><a href="" class="hover:text-amber-200">Feedback</a></li>
