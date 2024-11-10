@@ -111,4 +111,14 @@
       visibility: visible !important;
     }
   }
+
+  .test{
+    position: absolute;
+    top: 0;
+    left: -4px;
+    height: calc(100% + 1px);
+    width: calc(100% + 8px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0f0e12 80%);
+    border-radius: 15px;
+  }
 }
