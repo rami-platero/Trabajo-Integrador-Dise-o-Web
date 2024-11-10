@@ -43,38 +43,61 @@
         </h1>
         <p class="text-amber-50 max-w-[700px] text-center mx-auto text-sm leading-6">Have questions or ready to start
             your journey?
-            Reach out below, and we’ll be happy to help make your next adventure unforgettable!</p>
+            Reach out below, and we'll be happy to help make your next adventure unforgettable!</p>
         <form class="mt-8 max-w-[700px] w-full flex flex-col gap-4">
             <div class="flex gap-4 w-full">
                 <div class="flex flex-col gap-2 flex-1">
                     <label for="firstName" class="text-sm">First name</label>
                     <input required spellcheck="false" type="text" placeholder="First Name" name="firstName"
-                        class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full">
+                        class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-3 py-2 text-sm w-full">
                 </div>
                 <div class="flex flex-col gap-2 flex-1">
                     <label required spellcheck="false" for="lastName" class="text-sm">Last name</label>
                     <input type="text" placeholder="Last Name" name="lastName"
-                        class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full">
+                        class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-3 py-2 text-sm w-full">
                 </div>
             </div>
             <div>
                 <label for="email" class="text-sm">Email</label>
                 <input required spellcheck="false" type="text" name="email" placeholder="youremail@gmail.com"
-                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full mt-2">
+                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-3 py-2 text-sm w-full mt-2">
             </div>
             <div><label for="email" class="text-sm">Phone Number</label>
                 <input required spellcheck="false" type="tel" name="number" placeholder="+54 264 000 0000"
-                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full mt-2">
+                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-3 py-2 text-sm w-full mt-2">
             </div>
             <div>
                 <label for="message" class="text-sm">Message</label>
                 <textarea required spellcheck="false" name="message" placeholder="Leave us a message"
-                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-4 py-2 text-sm w-full min-h-[200px] resize-none mt-2"></textarea>
+                    class="outline-none bg-transparent border-2 border-gray-500 rounded-md px-3 py-2 text-sm w-full min-h-[200px] resize-none mt-2"></textarea>
             </div>
             <button type="submit"
-                class="text-amber-200 text-sm border-amber-200 border-[1px] rounded-3xl px-6 py-2 hover:bg-amber-200 hover:text-black duration-300 ease-in-out flex justify-center items-center gap-2">Send
+                class="text-amber-200 text-sm border-amber-200 border-[1px] rounded-3xl px-6 py-2 hover:bg-amber-200 hover:text-black duration-300 ease-in-out flex justify-center items-center gap-2"
+                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Send
                 message</button>
         </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="bg-[#0f0e12] border-gray-400 border-[1px] rounded-lg min-w-[500px]">
+                    <div class="modal-header flex justify-between items-center">
+                        <h2 class="text-xl font-semibold" id="exampleModalToggleLabel">Confirmation</h2>
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="w-6 h-6"
+                                data-lucide="x"></i></button>
+                    </div>
+                    <p class="text-sm text-amber-50 p-4">
+                        Are you sure you want to submit this message?
+                    </p>
+                    <div class="flex gap-2 items-center justify-end w-full p-4">
+                        <button
+                            class="bg-green-500/20 text-sm border-green-500 border-[1px] rounded-lg px-6 py-2 hover:bg-amber-200 hover:text-black duration-300 ease-in-out flex justify-center items-center gap-2 text-green-500 font-semibold">Submit</button><button
+                            class="bg-red-500/20 text-sm border-red-500 border-[1px] rounded-lg px-6 py-2 hover:bg-amber-200 hover:text-black duration-300 ease-in-out flex justify-center items-center gap-2 text-red-500 font-semibold">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="max-w-[1400px] mx-auto flex flex-col gap-8">
         <img src="../assets/images/logo.png" alt="" class="w-12">

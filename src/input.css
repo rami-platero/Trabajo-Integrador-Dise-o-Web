@@ -107,8 +107,8 @@
 
   .collapse-navbar {
     @media screen and (min-width: 768px) {
-        display: flex !important;
-        visibility: visible !important;
+      display: flex !important;
+      visibility: visible !important;
     }
   }
 }
